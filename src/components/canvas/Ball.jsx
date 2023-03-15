@@ -7,6 +7,7 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
@@ -17,7 +18,7 @@ const Ball = (props) => {
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
-        <icosahedronGeometry args={[1, 1]} />?
+        <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="#fff8eb"
           polygonOffset
@@ -26,8 +27,9 @@ const Ball = (props) => {
         />
         <Decal
           position={[0, 0, 1]}
-          map={decal}
           rotation={[2 * Math.PI, 0, 6.25]}
+          scale={1}
+          map={decal}
           flatShading
         />
       </mesh>
@@ -51,4 +53,5 @@ const BallCanvas = ({ icon }) => {
     </Canvas>
   );
 };
+
 export default BallCanvas;
