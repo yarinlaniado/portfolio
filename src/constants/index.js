@@ -11,17 +11,17 @@ import {
   mongodb,
   git,
   threejs,
-  chakraui,
   express,
-  firebase,
   sql,
-  mui,
   nextjs,
-  bootstrap,
   redditclone,
   quickelectric,
   yelpcamp,
   dashboard,
+  chakraui,
+  firebase,
+  bootstrap,
+  mui,
 } from "../assets";
 
 export const navLinks = [
@@ -72,20 +72,28 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Node.js",
+    icon: nodejs,
+  },
+  {
+    name: "Express",
+    icon: express,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "sql",
+    icon: sql,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node.js",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -96,24 +104,16 @@ const technologies = [
     icon: git,
   },
   {
+    name: "Next.js",
+    icon: nextjs,
+  },
+  {
     name: "chakra ui",
     icon: chakraui,
   },
   {
-    name: "ExpressJs",
-    icon: express,
-  },
-  {
     name: "firebase",
     icon: firebase,
-  },
-  {
-    name: "sql",
-    icon: sql,
-  },
-  {
-    name: "Next.js",
-    icon: nextjs,
   },
   {
     name: "Bootstrap",

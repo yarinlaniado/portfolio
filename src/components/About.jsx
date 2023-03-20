@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 const ServiceCard = ({ title, index, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-[250px] w-full ">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card "
@@ -45,18 +45,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a full stack developer who specializes in using the MERN (MongoDB,
-        Express, React, Node.js) stack to build web applications. I have a
-        strong background in programming and am skilled in both front-end and
-        back-end development, allowing me to create end-to-end solutions. I am
-        particularly proficient in using React to develop responsive and
-        interactive user interfaces, and I have experience working with various
-        libraries and tools to optimize web application performance. As a full
-        stack developer, I am well-versed in developing and integrating APIs,
-        managing databases, and deploying applications to production
-        environments. My expertise in the MERN stack makes me a valuable asset
-        for building modern web applications that require both speed and
-        scalability.
+        I am a Practical software engineer and a full stack developer who
+        specializes in using the MERN (MongoDB, Express, React, Node.js) stack
+        to build web applications. I have a strong background in programming and
+        am skilled in both front-end and back-end development, allowing me to
+        create end-to-end solutions. I am particularly proficient in using React
+        to develop responsive and interactive user interfaces, and I have
+        experience working with various libraries and tools ,that you can see
+        down below, to optimize web application performance. As a full stack
+        developer, I am well-versed in developing and integrating APIs, managing
+        databases, and deploying applications to production environments. My
+        expertise in the MERN stack makes me a valuable asset for building
+        modern web applications that require both speed and scalability.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
