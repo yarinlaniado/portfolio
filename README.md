@@ -7,7 +7,7 @@ This my portfolio, a SPA built with react and vite, with tailwindcss and threejs
 
 <h4>
 
-<a href="https://yarin-laniado-portfolio.vercel.app/">View Demo</a>
+<a href="https://yarinlaniado.vercel.app/">View Demo</a>
 
 </h4>
 
