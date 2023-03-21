@@ -11,11 +11,15 @@ const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [sent, setSent] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
   const handleSubmit = (e) => {
+    setSent(false);
+    setError(false);
     //service_wruv23y
     //template_iivrv8q
     //GuZ45tr-1-UqHiAPT
@@ -37,11 +41,12 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you, I will get to you ASAP!");
+          setSent(true);
           setForm({ name: "", email: "", message: "" });
         },
         (error) => {
           setLoading(false);
+          setError(true);
           console.log("🚀 ~ file: Contact.jsx:42 ~ .then ~ error:", error);
           alert("Something was wrong, Email did not sent.");
         }
@@ -58,6 +63,25 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        {error && (
+          <div
+            class="p-4 mb-4 mt-4 text-center text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+            role="alert"
+          >
+            Please fill all fields!
+          </div>
+        )}
+        {sent && (
+          <div
+            id="alert-3"
+            class=" p-4 mb-4 text-green-800 text-center rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 mt-5"
+            role="alert"
+          >
+            <div class="ml-3 text-sm font-medium">
+              Thank you, I will get to you ASAP!
+            </div>
+          </div>
+        )}
         <form
           ref={formRef}
           onSubmit={handleSubmit}
