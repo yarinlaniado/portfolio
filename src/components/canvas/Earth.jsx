@@ -25,6 +25,7 @@ const EarthCanvas = () => {
         far: 200,
         position: [-4, 3, 6],
       }}
+      enable
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -32,6 +33,7 @@ const EarthCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          enablePan={false}
         />
         <Earth />
 
