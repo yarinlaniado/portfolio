@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailJs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -20,9 +19,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     setSent(false);
     setError(false);
-    //service_wruv23y
-    //template_iivrv8q
-    //GuZ45tr-1-UqHiAPT
     e.preventDefault();
     setLoading(true);
     emailJs
@@ -121,7 +117,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="resize-none bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 

@@ -1,8 +1,6 @@
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import WebGL from "../utils/WebGL";
 const Tech = () => {
-  const webGLSupport = WebGL.isWebGLAvailable();
   return (
     <div className="flex flex-row flex-wrap justify-center gap-12">
       {technologies.map((technology) => (
@@ -13,6 +11,7 @@ const Tech = () => {
           key={technology.name}
         >
           <img className="p-3 " src={technology.icon} />
+
           <span>{technology.name}</span>
         </div>
       ))}
