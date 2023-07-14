@@ -29,8 +29,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={`project_image: ${name}`}
-            className="w-full h-full object-cover rounded-2xl"
-          />
+            class="w-full h-full object-contain"          />
         </div>
         <div className="absolute inset-0 flex items-center justify-end m-3 card-img_hover">
           <div
@@ -86,13 +85,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          My portfolio of projects serves as a demonstration of my skills and
-          experience through practical examples of my work. Each project is
-          briefly described and includes links to both code repositories and
-          live demos. These projects showcase my aptitude for solving intricate
-          problems, proficiency with various technologies, and adept project
-          management skills. You can access the source code or see the live
-          version by clicking the icons on the cards.
+         In my portfolio, I showcase my skills and experience through practical examples of my work. Each project comes with short descriptions and links to code repositories and live demos. They highlight my problem-solving ability, diverse tech proficiency, and strong project management skills. Just click the icons on the cards to access the source code or see them live!
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

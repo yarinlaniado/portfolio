@@ -45,19 +45,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a Practical software engineer and a full stack developer who
-        specializes in using the MERN (MongoDB, Express, React, Node.js) stack
-        to build web applications. I have a strong background in programming and
-        am skilled in both front-end and back-end development, allowing me to
-        create end-to-end solutions. I am particularly proficient in using React
-        to develop responsive and interactive user interfaces, and I have
-        experience working with various libraries and tools ,that you can see
-        down below, to optimize web application performance. As a full stack
-        developer, I am well-versed in developing and integrating APIs, managing
-        databases, and deploying applications to production environments. My
-        expertise in the MERN stack makes me a valuable asset for building
-        modern web applications that require both speed and scalability.
-      </motion.p>
+I'm an experienced full stack developer specializing in the MERN stack, currently undergoing DevOps training. With strong programming skills in front-end and back-end development, I create end-to-end solutions. I excel at using React for responsive UIs and optimizing web app performance using various libraries and tools. As a full stack developer, I handle APIs, databases, production deployment, and am expanding my expertise through DevOps training. My MERN proficiency enables me to build fast and scalable modern web applications.      </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
